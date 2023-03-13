@@ -5,6 +5,7 @@
 html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
+  color: rgb(25, 25, 204);
 }
 
 body {
@@ -56,8 +57,9 @@ label {
 }
 
 .tab-content img {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   max-width: 30rem;
+  scale: 0;
 }
 
 .tab-checkbox {
@@ -69,20 +71,35 @@ label {
   max-height: 50rem;
 }
 
-.up {
+.tab-checkbox:checked ~ label .tab-title {
+  color: #333;
+}
+
+.tab-checkbox:checked ~ label .tab-content img {
+  scale: 1;
+}
+
+.open-close {
   display: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s;
 }
 
-.down {
-  display: block;
-  transition: all 0.5s ease-in-out;
-}
-
-.tab-checkbox:checked ~ label .tab-title .up {
+.accordion:hover .tab-title .open-close {
   display: block;
 }
 
-.tab-checkbox:checked ~ label .tab-title .down {
-  display: none;
+.accordion:hover .tab-title {
+  color: #333;
+}
+
+.tab-checkbox:checked ~ label .tab-title .open-close {
+  rotate: 180deg;
+}
+
+.tab-checkbox:checked ~ label:active {
+  opacity: 0.5;
+}
+
+.tab-checkbox:checked ~ label:active .tab-title {
+  color: rgb(25, 25, 204);
 }
