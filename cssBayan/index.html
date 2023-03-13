@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cssBayan</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>CSS Bayan Task</h1>
+    <main>
+      <section class="accordion-container">
+        <h1>CSS Bayan</h1>
+        <ul class="accordion">
+          <li class="tab-container">
+            <div class="tab">
+              <input
+                type="checkbox"
+                name="chb1"
+                id="chb1"
+                class="tab-checkbox"
+              /><label class="tab-title" for="chb1"
+                >You can't just copy and paste CSS</label
+              >
+              <div class="tab-content">
+                <img
+                  src="./assets//cant-copy-css.jpg"
+                  alt="meme You can't just copy and paste CSS"
+                />
+              </div>
+            </div>
+          </li>
+
+          <li class="tab-container">
+            <div class="tab">
+              <input
+                type="checkbox"
+                name="chb1"
+                id="chb1"
+                class="tab-checkbox"
+              /><label class="tab-title" for="chb1"
+                >Keep calm and carry on</label
+              >
+              <div class="tab-content">
+                <img
+                  src="./assets/keep-calm.jpeg"
+                  alt="meme Keep calm and carry on"
+                />
+              </div>
+            </div>
+          </li>
+
+          <li class="tab-container">
+            <div class="tab">
+              <input
+                type="checkbox"
+                name="chb1"
+                id="chb1"
+                class="tab-checkbox"
+              /><label class="tab-title" for="chb1">Work-life balance</label>
+              <div class="tab-content">
+                <img src="./assets/work-life.jpg" alt="Work-life balance" />
+              </div>
+            </div>
+          </li>
+
+          <li class="tab-container">
+            <div class="tab">
+              <input
+                type="checkbox"
+                name="chb1"
+                id="chb1"
+                class="tab-checkbox"
+              /><label class="tab-title" for="chb1">Dude, where is JS</label>
+              <div class="tab-content">
+                <img
+                  src="./assets/where-is-js.jpg"
+                  alt="meme Dude, where is JS"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
